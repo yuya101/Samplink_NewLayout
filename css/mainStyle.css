@@ -1,0 +1,893 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(fonts/thsarabunnew.css);  /* 'THSarabunNew' */
+@import url(fonts/th_chakra_petch.css);  /* 'THChakraPetch' */
+
+<style type="text/css">
+<!--
+
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body {
+		font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif;
+		font-size:10px;
+		width:100%;
+		margin-left:auto;
+		margin-right:auto;
+}
+
+label {
+		font-size:12px;
+}
+
+input, select, textarea {
+	color:#cc3399; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+}
+
+fieldset{
+	border-radius: 5px;
+}
+
+img{
+	border:none;
+}
+
+ul {
+	list-style-type:none;
+}
+
+a {
+	text-decoration:none;
+}
+
+br{
+	clear:both; 
+	line-height:0; 
+	height:0;
+}
+
+
+.centerMain{
+	padding:0;
+	margin:0;
+	display:inline-block;
+	float:left;
+}
+
+.divCenter{
+	 clear:both; 
+	 width:100%;
+}
+
+.topicCenter{
+	text-align:left; 
+	padding-left:50px; 
+	padding-bottom:30px;
+	color:Black; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:12pt;
+}
+
+#leftBar img{
+	width:41px;
+	height:auto;
+}
+
+#leftBar, #rightBar{
+	float:left;
+	padding:0;
+	width:41px;
+	height:auto;
+}
+
+.signupTB{
+	width:600px;
+	background-color:#3F6789;
+	padding:20px;
+	border-radius:10px;
+}
+
+#signupTB2 tr td{
+	line-height:35px;
+}
+
+#menuSamplingDiv{
+	float:left;
+	display:inline-table;
+	padding-left:17px;
+	padding-top:10px;
+}
+
+#reviewComment{
+	color:Black; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:12pt;
+}
+
+.imgMenuSampling{
+	padding-bottom:5px;
+}
+
+.lineDetailSampling{
+	width:100%;
+	color:#39F;
+}
+
+.lineProductSampling{
+	width:97%;
+	color:#39F;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.samplingMainDiv{
+	width:773px;
+	float:left;
+}
+
+.samplingProductDiv{
+	width:773px;
+	float:left;
+}
+
+.samplingProductDiv1{
+	width: 385px;
+	float:left;
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.samplingProductDiv2{
+	width: 7px;
+	float:left;
+	display:inline-block;
+}
+
+.samplingProductDiv3{
+	width: 381px;
+	float:left;
+	display:inline-block;
+}
+
+.samplingProductPicMain{
+	margin-left:auto;
+	margin-right:auto;
+	width: 280px;
+	height: 210px;
+	margin-top: 6px;
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+	margin-bottom:10px;
+}
+
+.samplingProductPicSmall{
+	width: 50px;
+	height: 50px;
+	display:inline-block;
+	text-align:center;
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+	margin: 0 5px;
+}
+
+.ratingShowUL{
+	padding-left: 10px;
+}
+
+.ratingShowUL li{
+	clear:both;
+	list-style:none;
+	padding-bottom:5px;
+	display:inline-table;
+}
+
+.ratingShowUL label{
+	width:150px;
+	float:left;
+	text-align:left;
+	color:#666; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:12pt;
+	display:inline-table;
+}
+
+.ratingStarLI{
+	float:left;
+	width:218px;
+	display:inline-table;
+}
+
+.ratingPointLI{
+	float:left;
+	width:450px;
+	display:block;
+	display:inline-block;
+}
+
+.pointStar{
+	float:left;
+	display:inline-block;
+	padding:0px 8px;
+}
+
+.lineProductSamplingDetail{
+	width:70%;
+	color:#666;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left:10px;
+	float:left;
+	clear:both;
+}
+
+.samplingProductDetailDiv{
+	width: 99%;
+	float:left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.samplingProductDetailText{
+	float:left;
+	color:#666; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:12pt;
+	padding: 10px 20px;;
+}
+
+.samplingProductReviewDiv{
+	color:#666; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:12pt;
+	margin-top:5px;
+	float:left;
+}
+
+.reviewDetailDiv{
+	margin-top:10px;
+}
+
+.memberReviewImg {
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+	margin-bottom:10px;
+	margin-top: 10px;
+}
+
+.samplingMemberRating{
+	float:left;
+	display:inline-block;
+	width: 505px;
+}
+
+.ratingMemberRatingShowUL{
+	padding-left: 5px;
+}
+
+.ratingMemberRatingShowUL li{
+	clear:both;
+	list-style:none;
+	padding-bottom:5px;
+	display:inline-table;
+}
+
+.ratingMemberRatingShowUL label{
+	width:130px;
+	float:left;
+	color:#666; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+	display:inline-table;
+}
+
+.ratingMemberRatingStarLI{
+	float:left;
+	width:358px;
+	display:inline-table;
+	vertical-align:bottom;
+}
+
+.samplingReviewDetailDiv{
+	margin-left:auto;
+	margin-right:auto;
+	width: 470px;
+	height: 100px;
+	background-color:#EBEBEB;
+	border-radius:10px;
+	color:black; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+	text-align:left;
+	padding: 10px;
+}
+
+.buyProductFrameDiv{
+	width:745px;
+	font-size:12px;
+	float:left;
+	color:#333;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+}
+
+.orderProductTB{
+	border-style:groove;
+	border-width:thin;
+	border-color:#09F;
+	border-radius:5px;
+}
+
+.orderProductTB th{
+	font-size:14px;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif;
+	color:#000;
+	height:40px;
+}
+
+.orderProductTB td{
+	font-size:12px;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif;
+	color:#000;
+	height:40px;
+}
+
+.orderStatusDiv{
+	width: 740px;
+	float:left;
+}
+
+.orderStatusTB th{
+	font-size:14px;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif;
+	color:#000;
+	font-weight:bold;
+}
+
+.orderStatusTB td{
+	font-size:12px;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif;
+	color:#666;
+	font-weight:bold;
+}
+
+.myBarDiv{
+	float:left;
+	width: 981px;
+	height: 38px;
+	margin-left:17px;
+}
+
+.searchBox{
+	float:right;
+	width:400px;
+	height:44px;
+	margin-top: 0px;
+	padding:0 20px;
+	clear:both;
+	text-align:right;
+}
+
+.searchBox input{
+	vertical-align:bottom;
+	clear:right;
+	display: inline-block;
+}
+
+.bloggerShowDiv{
+	width:773px;
+	float:left;
+	margin-left:17px;
+	margin-top:15px;
+}
+
+.bloggerImageShowMain{
+	margin-left:auto;
+	margin-right:auto;
+	width: 650px;
+	height: 800px;
+	margin-top: 6px;
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+	margin-bottom:10px;
+}
+
+.bloggerImageSmall{
+	margin-left:auto;
+	margin-right:auto;
+	width: 50px;
+	height: 50px;
+	display:inline-block;
+	text-align:center;
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+	margin: 0 5px;
+}
+
+.bloggerReplyFormClass{
+	width:700px;
+	float:left;
+	text-align:center;
+}
+
+.blogUL li{
+	clear:both;
+	list-style:none;
+	padding-bottom:10px;
+	height:30px;
+	padding-left: 0px;
+}
+
+.blogUL input{
+	float:left;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+}
+
+.blogUL select{
+	float:left;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+}
+
+.blogUL label{
+	width:170px;
+	float:left;
+	text-align:left;
+	color:black; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+}
+
+.blogUL textarea{
+	float:left;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+	margin-bottom:5px;
+	overflow: visible;
+	clear:right;
+}
+
+.bloggerRightDiv{
+	float:left;
+	display:inline-table;
+	width: 190px;
+	padding-left:17px;
+	padding-top:10px;
+}
+
+.tableFixPosition{
+	display: inline-table; 
+	margin-left:75px;
+}
+
+.clear{clear:both; line-height:0; height:0; font-size: 1px} 
+
+.smallBlack {color:Black; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:8pt; }
+
+
+.normalPurple {color:#cc3399; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:9pt; }
+.normalBlue {color:#09F; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:9pt; }
+.normalRed {color:#F00; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:9pt; }
+.normalBlack {color:Black; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:9pt; }
+.normalWhite {color:white; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:9pt; }
+.normalPigBlood {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:9pt; }
+.normalAlmostBlack {color:#2F0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:9pt; }
+
+
+.middleBlack {color:Black; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middlePigBlood {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middlePink {color:#F72BB9; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middlePigBloodBold {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; font-weight:bold; }
+.middleLightGray {color:#666; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middleAlmostBlack {color:#2F0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middlePurple {color:#cc3399; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middleWhite {color:White; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middleBlue {color:#05A; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middleSoftBlue {color:#06F; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middleRed {color:Red; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middleOrange {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middleDarkOrange {color:#FF5300; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middleViolet {color:#6600CC; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+.middleSilver {color:#999; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; }
+
+
+.middleSilver11 {color:#666; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:11pt}
+.middlePurple11 {color:#cc3399; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:11pt; }
+.middleRed11 {color:red; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:11pt; }
+.middleBlack11 {color:black; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:11pt}
+.middleBlue11Italic {color:#05A; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:11pt; font-style:italic; }
+
+.middleRed11Chakra {color:red; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:11pt; }
+
+
+.bigRed {color:#F00; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; }
+.bigBoldRed {color:#F00; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; font-weight:bold }
+.bigBlack {color:Black; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; }
+.bigWhite {color:White; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; }
+.bigSilver {color:#96882A; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; }
+.bigBlackBold {color:Black; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; font-weight:bold }
+.bigBlackBoldChak {color:Black; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; font-weight:bold }
+.bigDarkBlue {color:#036; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; }
+.bigPurple {color:#cc3399; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; }
+.bigBlackBrown {color:#3E0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; font-weight:bold }
+.bigViolet {color:#60F; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; font-weight:bold }
+.bigYellow {color:#BB0; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; font-weight:bold }
+.bigDarkOrange {color:#FF5300; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:12pt; }
+
+.big14BigBrown {color:#800000; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:14pt; font-weight:bold }
+
+
+.big16White {color:White; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:16pt; }
+
+.big16LiteBrown {color:#CFC0BA; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:16pt; font-weight:bold }
+
+
+.veryBigBlackBrown {color:#3E0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:18pt; font-weight:bold }
+.veryBigPigBlood {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:18pt; font-weight:bold }
+.veryBigLiteBrown {color:#CFC0BA; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:18pt; font-weight:bold }
+.veryBigYellow {color:#E0AF1D; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:18pt; font-weight:bold }
+.veryBigOrange {color:#E97103; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:18pt; font-weight:bold }
+.veryBigBrown {color:#800000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:18pt; font-weight:bold }
+.veryBigLiteBlue {color:#039; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:18pt; font-weight:bold }
+.veryBigLightGray {color:#666; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:18pt; }
+
+
+.errFieldColor {color:white; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; font-size:10pt; background-color:red;}
+
+
+.mouseOut {background:#708090; color:#FFFAFA;}
+.mouseOver {background:#3333CC; color:#FFF;}
+
+a.linkSmallPigBlood:link {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallPigBlood:visited {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallPigBlood:active {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none}
+a.linkSmallPigBlood:hover {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red}
+
+a.linkSmallPurple:link {color:#cc3399; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallPurple:visited {color:#cc3399; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallPurple:active {color:#cc3399; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none}
+a.linkSmallPurple:hover {color:#cc3399; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red}
+
+a.linkSmallOrange:link {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallOrange:visited {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallOrange:active {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none}
+a.linkSmallOrange:hover {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red}
+
+a.linkSmallBlue:link {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallBlue:visited {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallBlue:active {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none}
+a.linkSmallBlue:hover {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red}
+
+a.linkSmallWhite:link {color:White; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallWhite:visited {color:White; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkSmallWhite:active {color:White; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none}
+a.linkSmallWhite:hover {color:White; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: yellow}
+
+a.linkBigViolet:link {color:#6600CC; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none; font-weight:bold}
+a.linkBigViolet:visited {color:#6600CC; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none; font-weight:bold}
+a.linkBigViolet:active {color:#6600CC; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none; font-weight:bold}
+a.linkBigViolet:hover {color:#6600CC; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red; font-weight:bold}
+
+a.linkPigBlood:link {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none; font-weight:bold}
+a.linkPigBlood:visited {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none; font-weight:bold}
+a.linkPigBlood:active {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none; font-weight:bold}
+a.linkPigBlood:hover {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red; font-weight:bold}
+
+a.linkPink:link {color:#F72BB9; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none; font-weight:bold}
+a.linkPink:visited {color:#F72BB9; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none; font-weight:bold}
+a.linkPink:active {color:#F72BB9; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none; font-weight:bold}
+a.linkPink:hover {color:#F72BB9; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red; font-weight:bold}
+
+a.linkOrange:link {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none; font-weight:bold}
+a.linkOrange:visited {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none; font-weight:bold}
+a.linkOrange:active {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none; font-weight:bold}
+a.linkOrange:hover {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red; font-weight:bold}
+
+a.linkOrangeUnderNormal:link {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: underline}
+a.linkOrangeUnderNormal:visited {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: underline}
+a.linkOrangeUnderNormal:active {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: underline}
+a.linkOrangeUnderNormal:hover {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red}
+
+a.linkOrangeUnder:link {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: underline; font-weight:bold}
+a.linkOrangeUnder:visited {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: underline; font-weight:bold}
+a.linkOrangeUnder:active {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: underline; font-weight:bold}
+a.linkOrangeUnder:hover {color:#F63; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red; font-weight:bold}
+
+a.linkMiddleAlmostBlack:link {color:#2F0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none}
+a.linkMiddleAlmostBlack:visited {color:#2F0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none}
+a.linkMiddleAlmostBlack:active {color:#2F0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ;text-decoration: none}
+a.linkMiddleAlmostBlack:hover {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ; cursor:hand; text-decoration: none; color: red}
+
+a.linkBlueUnderNormal:link {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: underline}
+a.linkBlueUnderNormal:visited {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: underline}
+a.linkBlueUnderNormal:active {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: underline}
+a.linkBlueUnderNormal:hover {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand; text-decoration: underline; color: red}
+
+a.linkBlueNormal:link {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkBlueNormal:visited {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt;text-decoration: none}
+a.linkBlueNormal:active {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ;text-decoration: none}
+a.linkBlueNormal:hover {color:red; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:9pt ; cursor:hand}
+
+a.linkGray:link {color:#666; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none}
+a.linkGray:visited {color:#666; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none}
+a.linkGray:active {color:#666; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ;text-decoration: none}
+a.linkGray:hover {color:#F6F; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ; cursor:hand}
+
+a.linkBlack:link {color:#000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none}
+a.linkBlack:visited {color:#000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none}
+a.linkBlack:active {color:#000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ;text-decoration: none}
+a.linkBlack:hover {color:#000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ; cursor:hand}
+
+a.linkWhite:link {color:#FFF; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none}
+a.linkWhite:visited {color:#FFF; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none}
+a.linkWhite:active {color:#FFF; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ;text-decoration: none}
+a.linkWhite:hover {color:#FFF; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ; cursor:hand}
+
+
+a.linkBigBlue:link {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt;text-decoration: none}
+a.linkBigBlue:visited {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt;text-decoration: none}
+a.linkBigBlue:active {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt ;text-decoration: none}
+a.linkBigBlue:hover {color:Blue; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt ; cursor:hand}
+
+a.linkBigYellow:link {color:#FFC; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt;text-decoration: none}
+a.linkBigYellow:visited {color:#FFC; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt;text-decoration: none}
+a.linkBigYellow:active {color:#FFC; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt ;text-decoration: none}
+a.linkBigYellow:hover {color:#FFC; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt ; cursor:hand}
+
+a.linkBlueBlack12Bold:link {color:#0A768D; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt;text-decoration: none; font-weight:bold}
+a.linkBlueBlack12Bold:visited {color:#0A768D; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt;text-decoration: none; font-weight:bold}
+a.linkBlueBlack12Bold:active {color:#0A768D; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt ;text-decoration: none; font-weight:bold}
+a.linkBlueBlack12Bold:hover {color:#0A768D; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt ; cursor:hand; font-weight:bold}
+
+
+a.linkSilver:link {color:#666; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none; font-weight:bold}
+a.linkSilver:visited {color:#666; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none; font-weight:bold}
+a.linkSilver:active {color:#666; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ;text-decoration: none; font-weight:bold}
+a.linkSilver:hover {color:#666; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ; cursor:hand; text-decoration: none; color: red; font-weight:bold}
+
+.linkSilver{
+	padding-left: 15px;
+	display:block;
+}
+
+a.linkBlue:link {color:#39F; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none; font-weight:bold}
+a.linkBlue:visited {color:#39F; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt;text-decoration: none; font-weight:bold}
+a.linkBlue:active {color:#39F; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ;text-decoration: none; font-weight:bold}
+a.linkBlue:hover {color:#39F; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:10pt ; cursor:hand; text-decoration: none; color: red; font-weight:bold}
+
+
+a.linkMiddleAlmostBlack11:link {color:#2F0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:11pt;text-decoration: none}
+a.linkMiddleAlmostBlack11:visited {color:#2F0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:11pt;text-decoration: none}
+a.linkMiddleAlmostBlack11:active {color:#2F0000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:11pt ;text-decoration: none}
+a.linkMiddleAlmostBlack11:hover {color:#D70000; font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:11pt ; cursor:hand; text-decoration: none; color: red}
+
+a.linkBlack12Bold:link {color:#000; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt;text-decoration: none; font-weight:bold}
+a.linkBlack12Bold:visited {color:#000; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt;text-decoration: none; font-weight:bold}
+a.linkBlack12Bold:active {color:#000; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt ;text-decoration: none; font-weight:bold}
+a.linkBlack12Bold:hover {color:#000; font-family:'THChakraPetch', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText; font-size:12pt ; cursor:hand; font-weight:bold}
+
+
+.linkBlue{
+	padding-left: 25px;
+	display:block;
+}
+
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+   
+   
+   
+/*----------------------------  Start รวมไฟล์ Class สำหรบส่วนของ Admin  ------------------------------------------------*/
+#loginMainDiv td img {
+	display: block;
+}
+
+#loginMainDiv input {
+	color:#05A; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:11pt; 
+	font-style:italic;
+	text-align:center;
+}
+
+.mainFormClass{
+	width:700px; 
+	margin-left:auto; 
+	margin-right:auto;
+	text-align:center;
+}
+
+.formUL li{
+	clear:both;
+	list-style:none;
+	padding-bottom:10px;
+	height:30px;
+}
+
+.formUL input{
+	float:left;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+}
+
+.formUL select{
+	float:left;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+}
+
+.formUL label{
+	width:170px;
+	float:left;
+	text-align:left;
+	color:White; 
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+}
+
+.formUL textarea{
+	float:left;
+	font-family:'THSarabunNew', Tahoma, Ms Sans Serif, Microsoft Sans Serif, db ThaiText, serif; 
+	font-size:10pt;
+	margin-bottom:5px;
+}
+
+/* CSS3 box-shadow and image hover effects */
+.presentImg {
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+	float:left;
+	margin-bottom:10px;
+}
+a:hover img.presentImg {
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+/* CSS3 box-shadow and image hover effects */
+/*----------------------------  End รวมไฟล์ Class สำหรบส่วนของ Admin  ------------------------------------------------*/
+
+
+
+/*----------------------------  Start Login Form  ------------------------------------------------*/
+/*body {
+    padding-top: 90px;
+}*/
+.panel-login {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+	color: #029f5b;
+	font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+
+/*----------------------------  End Login Form  ------------------------------------------------*/
+
+   
+-->
+</style>
